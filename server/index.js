@@ -4,10 +4,12 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const app = express();
+const router = require('./router');
 
 // App setup
 app.use(morgan('combined')); // used for logging.
 app.use(bodyParser.json({ type: '*/*'})); // parsing JSON requests
+router(app);
 
 
 
