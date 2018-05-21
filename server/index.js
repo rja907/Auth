@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 // DB setup (connecting to local mongodb server)
 
-mongoose.connect('mongodb://localhost:auth/auth');
+mongoose.connect('mongodb://localhost:27017/auth');
 
 // App setup
 app.use(morgan('combined')); // used for logging.
