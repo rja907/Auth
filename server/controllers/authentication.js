@@ -1,3 +1,5 @@
+const jwt = require('jwt-simple');
+const config = require('../config');
 const User = require('../models/user');
 
 exports.signup = function (req, res, next) {
